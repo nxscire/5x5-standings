@@ -36,14 +36,14 @@ th { color: #cbd5e1; font-size: 0.68rem; text-transform: uppercase; letter-spaci
 th.form-head { white-space: nowrap; width: 4.4%; }
 th.player-head { white-space: nowrap; width: 8%; }
 td.player { white-space: nowrap; }
-th.pending-head { color: #fde68a; text-transform: none; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; line-height: 1.15; text-align: center; white-space: normal; }
-th.resolved-head { color: #86efac; text-transform: none; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; line-height: 1.15; text-align: center; }
-th.void-head { color: #94a3b8; text-transform: none; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; line-height: 1.15; text-align: center; }
+th.pending-head { color: #fde68a; text-transform: none; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; line-height: 1.15; text-align: center; white-space: nowrap; }
+th.resolved-head { color: #86efac; text-transform: none; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; line-height: 1.15; text-align: center; white-space: nowrap; }
+th.void-head { color: #94a3b8; text-transform: none; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; line-height: 1.15; text-align: center; white-space: nowrap; }
 .pick-hit { background: #166534; color: #bbf7d0; font-weight: 800; border-radius: 8px; }
 .pick-miss { background: #7f1d1d; color: #fecaca; font-weight: 800; border-radius: 8px; }
 .pick-void { background: #334155; color: #94a3b8; font-weight: 700; border-radius: 8px; }
-.pick-team { display: block; white-space: nowrap; font-size: 0.62rem; }
-.pick-spread { display: block; font-variant-numeric: tabular-nums; font-size: 0.62rem; }
+.pick-team { display: inline; white-space: nowrap; }
+.pick-spread { display: inline; white-space: nowrap; font-variant-numeric: tabular-nums; }
 td.pending-pick, td.no-pick { text-align: center; overflow: hidden; text-overflow: ellipsis; }
 .pending-pick { font-weight: 700; white-space: nowrap; font-size: 0.68rem; }
 .team-chip { font-weight: 800; }
@@ -96,7 +96,7 @@ summary { cursor: pointer; font-weight: 700; }
 <h2>Standings</h2>
 <div class="table-wrap">
 <table class="standings">
-<thead><tr><th>#</th><th class="player-head">Player</th><th class="form-head">Form<br><span class="form-num">1</span></th><th class="form-head">Form<br><span class="form-num">2</span></th><th class="points-head">Total</th><th class="pending-head"><span class="pick-team">Knicks</span><span class="pick-spread">+2.5</span></th><th class="pending-head">Rays +1.5</th><th class="pending-head"><span class="pick-team">UMass</span><span class="pick-spread">+13.5</span></th><th class="pending-head"><span class="pick-team">Duke</span><span class="pick-spread">+2.5</span></th><th class="pending-head"><span class="pick-team">NCSU</span><span class="pick-spread">-6.5</span></th></tr></thead>
+<thead><tr><th>#</th><th class="player-head">Player</th><th class="form-head">Form<br><span class="form-num">1</span></th><th class="form-head">Form<br><span class="form-num">2</span></th><th class="points-head">Total</th><th class="pending-head"><span class="pick-team">Knicks</span> <span class="pick-spread">+2.5</span></th><th class="pending-head">Rays +1.5</th><th class="pending-head"><span class="pick-team">UMass</span> <span class="pick-spread">+13.5</span></th><th class="pending-head"><span class="pick-team">Duke</span> <span class="pick-spread">+2.5</span></th><th class="pending-head"><span class="pick-team">NCSU</span> <span class="pick-spread">-6.5</span></th></tr></thead>
 <tbody>
 <tr><td class="rank">1</td><td class="player">Schmidt</td><td class="form-score">3</td><td class="form-score">0</td><td class="points">3</td><td class="pending-pick team-chip" style="background:#007A33;color:#F8FAFC;border-radius:8px;">Celtics</td><td class="pending-pick team-chip" style="background:#092C5C;color:#8FBCE6;border-radius:8px;">Rays</td><td class="pending-pick team-chip" style="background:#000E2F;color:#FFFFFF;border-radius:8px;">UConn</td><td class="pending-pick team-chip" style="background:#003087;color:#FFFFFF;border-radius:8px;">Duke</td><td class="pending-pick team-chip" style="background:#CC0000;color:#000000;border-radius:8px;">NCSU</td></tr>
 <tr><td class="rank">2</td><td class="player">Abbo</td><td class="form-score">2</td><td class="form-score">0</td><td class="points">2</td><td class="pending-pick team-chip" style="background:#007A33;color:#F8FAFC;border-radius:8px;">Celtics</td><td class="pending-pick team-chip" style="background:#12284B;color:#FFC52F;border-radius:8px;">Brewers</td><td class="pending-pick team-chip" style="background:#881C1C;color:#FFFFFF;border-radius:8px;">UMass</td><td class="pending-pick team-chip" style="background:#232D4B;color:#F84C1E;border-radius:8px;">UVA</td><td class="pending-pick team-chip" style="background:#CC0000;color:#000000;border-radius:8px;">NCSU</td></tr>
@@ -125,7 +125,7 @@ summary { cursor: pointer; font-weight: 700; }
 <h3>Picks</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th class="player-head">Player</th><th class="resolved-head"><span class="pick-team">NE</span><span class="pick-spread">+2.5</span></th><th class="resolved-head">MNF Over Un…</th><th class="resolved-head"><span class="pick-team">HPY-DM</span><span class="pick-spread">-2.5</span></th><th class="points-head">Pts</th></tr></thead>
+<thead><tr><th class="player-head">Player</th><th class="resolved-head"><span class="pick-team">NE</span> <span class="pick-spread">+2.5</span></th><th class="resolved-head">MNF Over Un…</th><th class="resolved-head"><span class="pick-team">HPY-DM</span> <span class="pick-spread">-2.5</span></th><th class="points-head">Pts</th></tr></thead>
 <tbody>
 <tr><td>Schmidt</td><td><span class="mark-yes">✓</span> <span class="pending-pick pick-hit">Chicago</span></td><td><span class="mark-yes">✓</span> <span class="pending-pick pick-hit">Over</span></td><td><span class="mark-yes">✓</span> <span class="pending-pick pick-hit">Maye</span></td><td class="points">3</td></tr>
 <tr><td>Abbo</td><td><span class="mark-no">×</span> <span class="pending-pick pick-miss">NE</span></td><td><span class="mark-yes">✓</span> <span class="pending-pick pick-hit">Over</span></td><td><span class="mark-yes">✓</span> <span class="pending-pick pick-hit">Maye</span></td><td class="points">2</td></tr>
@@ -152,7 +152,7 @@ summary { cursor: pointer; font-weight: 700; }
 <h3>Picks</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th class="player-head">Player</th><th class="pending-head"><span class="pick-team">Knicks</span><span class="pick-spread">+2.5</span></th><th class="pending-head">Rays +1.5</th><th class="pending-head"><span class="pick-team">UMass</span><span class="pick-spread">+13.5</span></th><th class="pending-head"><span class="pick-team">Duke</span><span class="pick-spread">+2.5</span></th><th class="pending-head"><span class="pick-team">NCSU</span><span class="pick-spread">-6.5</span></th><th class="points-head">Pts</th></tr></thead>
+<thead><tr><th class="player-head">Player</th><th class="pending-head"><span class="pick-team">Knicks</span> <span class="pick-spread">+2.5</span></th><th class="pending-head">Rays +1.5</th><th class="pending-head"><span class="pick-team">UMass</span> <span class="pick-spread">+13.5</span></th><th class="pending-head"><span class="pick-team">Duke</span> <span class="pick-spread">+2.5</span></th><th class="pending-head"><span class="pick-team">NCSU</span> <span class="pick-spread">-6.5</span></th><th class="points-head">Pts</th></tr></thead>
 <tbody>
 <tr><td>Schmidt</td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#007A33;color:#F8FAFC;border-radius:8px;">Celtics</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#092C5C;color:#8FBCE6;border-radius:8px;">Rays</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#000E2F;color:#FFFFFF;border-radius:8px;">UConn</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#003087;color:#FFFFFF;border-radius:8px;">Duke</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#CC0000;color:#000000;border-radius:8px;">NCSU</span></td><td class="points">0</td></tr>
 <tr><td>Abbo</td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#007A33;color:#F8FAFC;border-radius:8px;">Celtics</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#12284B;color:#FFC52F;border-radius:8px;">Brewers</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#881C1C;color:#FFFFFF;border-radius:8px;">UMass</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#232D4B;color:#F84C1E;border-radius:8px;">UVA</span></td><td><span class="mark-pending">–</span> <span class="pending-pick team-chip" style="background:#CC0000;color:#000000;border-radius:8px;">NCSU</span></td><td class="points">0</td></tr>
