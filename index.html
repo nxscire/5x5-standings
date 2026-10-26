@@ -44,11 +44,12 @@ th.void-head { color: #94a3b8; text-transform: none; letter-spacing: 0; font-siz
 .pick-void { background: #334155; color: #94a3b8; font-weight: 700; border-radius: 8px; }
 .pick-team { display: block; white-space: nowrap; font-size: 0.62rem; }
 .pick-spread { display: block; font-variant-numeric: tabular-nums; font-size: 0.62rem; }
-td.pending-pick, td.no-pick { text-align: center; overflow: hidden; text-overflow: ellipsis; }
+td.pending-pick { text-align: center; overflow: hidden; text-overflow: ellipsis; }
+td.no-pick { text-align: left; padding-left: 0.55rem; overflow: hidden; white-space: nowrap; color: #64748b; font-style: italic; }
 .pending-pick { font-weight: 700; white-space: nowrap; font-size: 0.68rem; }
 .team-chip { font-weight: 800; }
 span.team-chip { display: inline-block; min-width: 2.4rem; padding: 3px 4px; border-radius: 8px; }
-.no-pick { color: #64748b; font-style: italic; text-align: left; }
+.no-pick { color: #64748b; font-style: italic; }
 tbody tr:nth-child(odd) { background: #111827; }
 tbody tr:nth-child(even) { background: #1a2436; }
 tbody tr { animation: row-in 420ms ease both; transition: background-color 160ms ease; }
