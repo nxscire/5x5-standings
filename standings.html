@@ -314,6 +314,16 @@ details .pick-team, details .pick-spread { font-size: 0.56rem; overflow: hidden;
   .table-wrap table:not(.standings) th,
   .table-wrap table:not(.standings) td { min-width: 3.4rem; }
 }
+
+table.standings.week th.player-head,
+table.standings.week td.player { width: 7.4rem; }
+table.standings.all-tied tbody tr:nth-child(1) td:first-child,
+table.standings.all-tied tbody tr:nth-child(2) td:first-child { box-shadow: none; }
+.week-board { margin-top: 28px; }
+.section-note { margin: 0 0 10px; color: #d7bba6; font-size: 0.92rem; }
+.form-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+.form-link { display: inline-block; padding: 10px 16px; border-radius: 999px; background: linear-gradient(145deg, #9a3412, #7f1d1d); border: 1px solid var(--gold); color: #fff8ef; font-weight: 800; letter-spacing: 0.04em; text-decoration: none; }
+.form-link:hover { color: var(--gold); }
 </style>
 </head>
 <body>
@@ -330,7 +340,8 @@ details .pick-team, details .pick-spread { font-size: 0.56rem; overflow: hidden;
 <p class="kicker">Thanksgiving Super Bowl</p>
 <h1>Week 11</h1>
 <p class="subtitle">NFL Week 12 · Wednesday through Black Friday</p>
-<p class="note">Week 11 was a bye so this slate could be the big one. The form is still coming. Season standings are through Week 10.</p>
+<p class="note">18 Wednesday entries are in. Packers at Rams has not kicked off, so Form 1 is 0 of 3. Season standings are through Week 10.</p>
+<p class="form-links"><a class="form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdp93AcYYDpvBK1Yo2ymvGTfGi8i8FD1NYvXxI75Yi64AziUg/viewform?usp=sharing&amp;ouid=106774245252108912083" target="_blank" rel="noopener noreferrer">Wednesday Form</a></p>
 </div>
 <div class="clock-wrap">
     <div class="clock" id="clock" aria-label="Countdown to the next holiday kickoff">
@@ -390,6 +401,40 @@ details .pick-team, details .pick-spread { font-size: 0.56rem; overflow: hidden;
     <p class="state"></p>
   </article>
 </div>
+
+<section class="week-board" id="week">
+  <h2>This week</h2>
+  <p class="section-note">Wednesday opener, partial. Everyone is tied at 0 until Packers at Rams is played.</p>
+  <div class="table-wrap">
+    <table class="standings week all-tied">
+      <thead><tr><th>#</th><th class="player-head">Player</th><th class="form-head">Form<br><span class="form-num">1</span></th><th class="points-head">Total</th><th class="pending-head"><span class="pick-team">Packers</span><span class="pick-spread">+3</span></th><th class="pending-head"><span class="pick-team">O/U</span><span class="pick-spread">45</span></th><th class="pending-head"><span class="pick-team">Love</span><span class="pick-spread">−2.5</span></th></tr></thead>
+      <tbody>
+        <tr><td class="rank">1</td><td class="player">Abbo</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">2</td><td class="player">Aidan</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">UNDER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">3</td><td class="player" title="andrewmeyers322@gmail.com">Meyers</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">UNDER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">4</td><td class="player" title="bminzenmeyer02@gmail.com">Minzenmeyer</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#003594;color:#FFA300">LAR</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">5</td><td class="player">Bohlman</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">UNDER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">6</td><td class="player" title="cbird6795@gmail.com">Bird</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">7</td><td class="player">Coach</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#003594;color:#FFA300">LAR</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">8</td><td class="player">Fins</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">9</td><td class="player">Hank</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">10</td><td class="player" title="jlindsey3428@gmail.com">Lindsey</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">UNDER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">11</td><td class="player" title="mabelman2@gmail.com">Mabelman</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">UNDER</td><td class="pending-pick">Stafford</td></tr><tr><td class="rank">12</td><td class="player" title="matthewmottola75@gmail.com">Mottola</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#003594;color:#FFA300">LAR</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">13</td><td class="player">Max</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">UNDER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">14</td><td class="player" title="mtibaudo@gmail.com">Tibaudo</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#003594;color:#FFA300">LAR</td><td class="pending-pick">OVER</td><td class="pending-pick">Stafford</td></tr><tr><td class="rank">15</td><td class="player">Sam L</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#003594;color:#FFA300">LAR</td><td class="pending-pick">UNDER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">16</td><td class="player" title="shawnscottcarl@gmail.com">Shawn</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">17</td><td class="player" title="will.wendel302@gmail.com">Wendel</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr><tr><td class="rank">18</td><td class="player">Yaggy</td><td class="form-score">0</td><td class="points">0</td><td class="pending-pick team-chip" style="background:#203731;color:#FFB612">GB</td><td class="pending-pick">OVER</td><td class="pending-pick">Love</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="form-results">
+  <h2>Form Results</h2>
+  <details>
+    <summary>Form 1 — Wednesday opener, 18 of 18 submitted</summary>
+    <h3>Results</h3>
+    <ul class="results">
+      <li>Packers +3 @ Rams: <strong>Hasn't Played</strong></li>
+      <li>Packers @ Rams over/under 45: <strong>Hasn't Played</strong></li>
+      <li>Jordan Love −2.5 vs. Matthew Stafford: <strong>Hasn't Played</strong></li>
+    </ul>
+    <h3>Picks</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th class="player-head">Player</th><th class="pending-head"><span class="pick-team">Packers</span><span class="pick-spread">+3</span></th><th class="pending-head"><span class="pick-team">O/U</span><span class="pick-spread">45</span></th><th class="pending-head"><span class="pick-team">Love</span><span class="pick-spread">−2.5</span></th><th class="points-head">Pts</th></tr></thead>
+        <tbody>
+          <tr><td class="player">Abbo</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Aidan</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="andrewmeyers322@gmail.com">Meyers</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="bminzenmeyer02@gmail.com">Minzenmeyer</td><td><span class="mark-pending">–</span> LAR</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Bohlman</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="cbird6795@gmail.com">Bird</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Coach</td><td><span class="mark-pending">–</span> LAR</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Fins</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Hank</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="jlindsey3428@gmail.com">Lindsey</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="mabelman2@gmail.com">Mabelman</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Stafford</td><td class="points">0</td></tr><tr><td class="player" title="matthewmottola75@gmail.com">Mottola</td><td><span class="mark-pending">–</span> LAR</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Max</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="mtibaudo@gmail.com">Tibaudo</td><td><span class="mark-pending">–</span> LAR</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Stafford</td><td class="points">0</td></tr><tr><td class="player">Sam L</td><td><span class="mark-pending">–</span> LAR</td><td><span class="mark-pending">–</span> UNDER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="shawnscottcarl@gmail.com">Shawn</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player" title="will.wendel302@gmail.com">Wendel</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr><tr><td class="player">Yaggy</td><td><span class="mark-pending">–</span> GB</td><td><span class="mark-pending">–</span> OVER</td><td><span class="mark-pending">–</span> Love</td><td class="points">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
 <section id="season">
   <h2>Season standings</h2>
   <p class="section-note">Through Week 10. Fins leads at 262. A dash means that player sat the week out. Green is a weekly win, gray is second, bronze is third.</p>
